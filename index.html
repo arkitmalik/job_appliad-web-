@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+
+    <style>
+
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }  
+     body{
+        background-color: #ccc;
+     }}
+     .container{
+        max-width: 900px;
+        margin: 0 auto;
+       
+     }
+     .apply_box{
+        max-width: 600px;
+        padding: 20px;
+        background-image: url(pen.jpg);
+        margin: 0 auto;
+        margin-top: 50px;
+        box-shadow: 4px 3px 5px rgb(1, 1, 1,0.1 );
+        border-radius: 10px;
+     }
+     .form_container{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+     }
+     .forn_conteol{
+        display: flex;
+        flex-direction: column;
+     }
+     label{
+        font-size: 15px;
+        margin-bottom: 7px;
+     }
+     input,select,textarea{
+        padding: 6px 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+     }
+     input:focus{
+        outline-color: orangered;
+     }
+     .button_container{
+        display: flex;
+        align-items: ;
+        justify-content: end;
+        margin-top: 20px;
+     }
+     button{
+        background-color: rgb(174, 220, 223);
+        border: transparent solid 2px;
+        padding: 5px 10px;
+        color: blue;
+        border-radius: 8px;
+        transition: 0.3s ease-in;
+     }
+     button:hover{
+        background-color: chartreuse;
+        border: 2px solid black;
+        color: black;
+        transition: 0.3s ease-out;
+        cursor: pointer;
+     }
+     .textarea_conteol{
+        grid-column: 1 / span 2;
+     }
+     .textarea_conteol textarea{
+        width: 100%;
+     }
+     @media (max-width: 460px){
+        .textarea_conteol{
+        grid-column: 1 / span 1;
+     }
+     }
+
+        
+        
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+    <h1>Job Application <small>(web)</small></h1>
+    <form action="">
+        <div class="form_container">
+            <div class="forn_conteol">
+               
+                <label for="first name">First Name</label>
+                <input
+                id="first name"
+                name="first name"
+                placeholder=" Enter first name..."
+                />
+            </div>
+                
+                    
+                        <div class="forn_conteol">
+                            <label for="last name">Last Name</label>
+                            <input
+                            id="last name"
+                            name="last name"
+                            placeholder=" Enter Last Name..."
+                            />
+                        </div>
+                
+                
+                    <div class="forn_conteol">
+                        <label for="email">Email</label>
+                        <input
+                        id="email"
+                        name="email"
+                        placeholder=" Enter Email..."
+                        />
+                </div>
+                
+                    <div class="forn_conteol">
+                        <label for="job_role">Job Role</label>
+                        <select id="job_role"  name="job_role" >
+                            <option value="">Select Job Role</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="full_stack">Full Stack Developer</option>
+                        </select>
+                </div>
+                <div class="textarea_conteol">
+                    <label for="address">Address</label>
+                   <textarea name="address" id="address" rows="4"  cols="50" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="forn_conteol">
+               
+                <label for="city">City</label>
+                <input
+                id="city"
+                name="city"
+                placeholder=" Enter The City..."
+                />
+            </div>
+            <div class="forn_conteol">
+               
+                <label for="pindcode">Pindcode</label>
+                <input
+                type="number"
+                id="pindcode"
+                name="pindcode"
+                placeholder=" Enter The pindcode..."
+                />
+            </div>
+            <div class="forn_conteol">
+               
+                <label for="date">Date</label>
+                <input
+                value="2004-04-23"
+                type="date"
+                id="date"
+                name="date"
+                />
+            </div>
+            <div class="forn_conteol">
+               
+                <label for="upload">Upload Your CV</label>
+                <input
+                
+                type="file"
+                id="upload"
+                name="upload"
+                />
+            </div>
+
+
+            
+
+        </div>
+
+        <div class="button_container">
+            <button type="submit">Apply Now</button>
+        </div>
+    </form>
+   
+
+    
+</body>
+</html>
